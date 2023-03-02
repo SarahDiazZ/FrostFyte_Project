@@ -1,0 +1,47 @@
+Platform Fighter Engine - FAQ
+(Last Modified: 12/24/2022)
+
+What is "Platform Fighter Engine"?
+	It is a GameMaker project that can be easily modified to make games in the platform fighter genre.
+
+What game engine does it work for?
+	Currently, it only works on GameMaker 2022+, so older versions of GameMaker or any other game development engines (Unity, Unreal, Godot, etc.) will NOT be compatible. There are no plans to officially port PFE to any other engine.
+
+Do I have to know how to code to use it?
+	Somewhat. The engine comes with pre-made examples of characters and attacks. You can swap out sprites or change values of the pre-existing attacks without any prior code knowledge. If you want more freedom, you will need to learn GML.
+
+How much does the engine cost?
+	The "core" version of PFE is free, but does not have online features. The full release of PFE costs $30. GameMaker has a free version, but it can only export to Opera GX (which does not support online play), so you will need to get a license if you want to export to other platforms. All previously available beta versions of PFE can still be downloaded for free on itch.io page, but do not have as many features.
+
+Does PFE have online play?
+	Yes, but if you want to add quickplay / random matchmaking you will need to host your own public matchmaking server. A template server can be found in the included files.
+
+Up to what ping can PFE support?
+	The quality of online matches can be affected by more than just ping - packet loss, graphics card settings, the set input delay, etc. - so we recommend you try out the demo first to make sure the game runs on your setup. We recommend playing on less than 150ms ping.
+
+What platforms does PFE run on?
+	PFE only fully works on Windows. Both the Opera GX and HTML5 exports do not support online play. There are no plans to officially port PFE to any other platforms. 
+
+How does PFE compare to Rivals Workshop or Fraymakers?
+	PFE gives you full control over the entire game. However, this means content made in PFE may not be compatible with other content people make. PFE is intended to be used to make standalone games, and there is no central place to share content for PFE.
+
+Can I sell what I make with PFE?
+	Yes, you can make commercial games with PFE, as long as you don't share the source code. You can read the full license on the website (https://platformfighterengine.com/#/about).
+
+Why does the project in GameMaker run slower than the demo executable?
+	The demo is compiled using YYC, which converts GML code to C++, allowing it to run much faster. Check out the Official YYC Guide (https://help.yoyogames.com/hc/en-us/articles/235186048-Setting-Up-For-Windows) to learn how to use YYC.
+
+Can I make a singleplayer story mode in PFE?
+	It's possible, but there is no built-in template for singleplayer modes.
+
+How do I update to the current version of PFE from an older version?
+	Unfortunately, there is no easy way to move a project between versions of PFE. We recommend you keep track of all the changes you make using a source control program, and then port only those changes to the newer version.
+
+Why is the game running slow on my computer?
+	This could be due to a number of reasons. Check your graphics card settings and make sure the refresh rate of your monitor isn't above 60. If you're using a laptop, set it to "best performance". On large monitors, use fullscreen mode instead of resizing the window. If the game is still not running at 60fps, try turning on "Performance Mode" or "Disable Shaders" from the in-game options.
+
+How can I get my controller to work with PFE?
+	Only Xbox controllers, keyboards, and touch controls are guaranteed to work with PFE. If you are having issues with a different controller that cannot be fixed through the in-game settings, try running the game through Steam in Big Picture Mode, and setting up the controller with Steam's menu.
+
+Can I make the engine 3D?
+	Unless you are an expert at using 3D in GameMaker, no.

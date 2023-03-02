@@ -1,0 +1,46 @@
+Platform Fighter Engine Full Release 1.3.4 Hotfix - Patch Notes
+(Last Modified: 1/15/2022)
+
+Attacks
+- General balance changes.
+- "fspec_eiha" now deals damage over time.
+- Added a new attack, "dspec_earth_wall".
+
+Stages
+- A new template stage has been added: "Smiley Floats"!
+
+Functionality
+- Added grab clank struggles when players grab each other at the same time.
+- Added an example script "poison_passive" for damage-over-time status effects.
+- You can now taunt on the respawn platform.
+- Added a scoreboard between stocks for 1v1 matches.
+
+Fixes
+- Added a cooldown for footstools to prevent infinites.
+- Footstooling no longer uses up one double jump.
+- "rm_practice_room" now has a white background color by default, so you can see the stage.
+- "live_value" now reads values as real numbers automatically (unless specified not to).
+- Fixed a bug where "fspec_shadow_flare" would crash if the target instance was destroyed before the flares hit.
+- Fixed "ex_meter_overhead" not positioning the bars correctly.
+- "apply_damage" now correctly creates damage numbers over the player being damaged, instead of the player calling the script.
+- Fixed an issue where the macros related to balloon knockback did not work as intended.
+- Launch trajectories are now more accurate.
+- Fixed some issues with the touch controls stick.
+- Fixed some collision issues with moving platforms and the Explosive Box item.
+- Tap Jump no longer buffers multiple jump inputs.
+- Perfect shielding now works again.
+
+Extra
+- Decimal point damage is now drawn smaller on the HUD.
+- "calculate_smash_damage" no longer rounds the amount.
+- Added sound effects for shield start and shield release.
+- Players standing on the ground will now be KO'd by the top blastzone. This means that platforms moving upwards can KO players now.
+- Players can no longer be Screen or Star KO'd on their last stock, or in the last 10 seconds of a match.
+- Changed a few hitbox interactions with the Smash Ball item to be more intuitive.
+- Players with the "Smash Stick" setting can no longer perform smash attacks in certain states that don't normally allow smash attacks.
+- Updated the docs for "game_surface_enable" to mention that disabling the game surface also disables Clip Saving.
+- "obj_stage_manager" now has a "custom_ids_struct" variable you can use.
+- PFE now officially uses the Long-Term Stable (LTS) branch of GameMaker.
+- Removed blank folders from the project, and fixed filename capitalization inconsistencies.
+- Updated comments to be more consistent for the documentation.
+- Updated copyrights to 2023.

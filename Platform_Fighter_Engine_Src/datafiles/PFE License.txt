@@ -1,0 +1,40 @@
+Platform Fighter Engine - User Agreement 
+(Last Modified: 9/14/2022)
+
+Definitions
+- "Customer": means any person, company or other legal entity that uses Platform Fighter Engine code (also referred to throughout as "you").
+- "PFE": means Platform Fighter Engine.
+- "Vendor": means the authors, copyright holders, and sellers of Platform Fighter Engine on itch.io (Springroll Games / Yosi).
+
+Accepting the Agreement
+- This agreement applies to "Full Release" versions of PFE (numbers 1.0.0 or greater), and "Core" versions of PFE.
+- By using any code from PFE, you accept all the terms and conditions of this agreement.
+- This agreement does not apply to the assets included in PFE. The assets are provided under the "Creative Commons Attribution v4.0 International" license.
+- This Agreement contains the entire agreement between the parties.
+
+General
+- Under this Agreement the Vendor grants to the customer a non-exclusive and non-transferable license (the "License") to use PFE.
+- Title, copyright, intellectual property rights and distribution rights of PFE remain exclusively with the Vendor. This Agreement constitutes a license for use only and is not in any way a transfer of ownership rights to PFE.
+- The customer may not transfer the source code to any other entity or individual.
+- The rights and obligations of this Agreement are personal rights granted to the customer only. The customer may not transfer or assign any of the rights or obligations granted under this Agreement to any other person or legal entity.
+- You are solely responsible for your own use of PFE and for any breach of your obligations under this Agreement. You are responsible for compliance with all local laws, regulation and industry practice when accessing and using PFE.
+
+Distribution
+- Although the customer shall NOT distribute any of the source code, the customer may compile PFE, including the source code, with other intangible property (e.g., other source codes, images, or sounds), and—after such compilation—distribute the completed product.
+- Any distributed compiled products including PFE code must contain all of the following (unless the Vendor specifically requests for them to be removed):
+    1. Identification of the Vendor and any others designated to receive attribution (as determined by the "PFE Credits.txt" file included in the project), in any reasonable manner.
+    2. The PFE Logo on a splash screen, title screen, or startup sequence.
+- Any distributed compiled products including PFE code must NOT contain any of the following:
+    1. Blockchain, cryptocurrency, or NFT integration.
+
+Limitation of Liability / Warrants and Representations
+- PFE is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement.
+- In no event shall the Vendor be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with PFE or the use or other dealings in PFE.
+- The Vendor does not warrant that use of PFE will be uninterrupted or error-free. The customer accepts that PFE in general is prone to bugs and flaws within an acceptable level as determined in the industry.
+- Your use of PFE is at your own discretion and risk.
+
+User Support
+- No user support or maintenance is provided as part of this Agreement.
+
+Termination
+- This Agreement will be terminated and the License forfeited where the customer has failed to comply with any of the terms of this Agreement or is in breach of this Agreement.
