@@ -71,6 +71,19 @@ function character_data_get_all() {
 			),
 		character_define
 			(
+			"Alex",
+			character_init5,
+			spr_render5,
+			spr_css0,
+			spr_palette0,
+			spr_portrait5,
+			spr_stock5,
+			song_victory0,
+			["texture_character0"],
+			cpu_script0,
+			),
+		character_define
+			(
 			"Random",
 			-1,
 			spr_render0,
