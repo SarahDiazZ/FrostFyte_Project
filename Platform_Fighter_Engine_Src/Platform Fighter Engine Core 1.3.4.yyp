@@ -1211,6 +1211,7 @@
     {"id":{"name":"uair_dr_mario","path":"scripts/uair_dr_mario/uair_dr_mario.yy",},"order":99,},
     {"id":{"name":"uair_ike","path":"scripts/uair_ike/uair_ike.yy",},"order":100,},
     {"id":{"name":"uair_ivysaur","path":"scripts/uair_ivysaur/uair_ivysaur.yy",},"order":101,},
+    {"id":{"name":"spr_idle5","path":"sprites/spr_idle5/spr_idle5.yy",},"order":3,},
     {"id":{"name":"uair_joker","path":"scripts/uair_joker/uair_joker.yy",},"order":102,},
     {"id":{"name":"spr_nspec4_kunai_hit_counter","path":"sprites/spr_nspec4_kunai_hit_counter/spr_nspec4_kunai_hit_counter.yy",},"order":40,},
     {"id":{"name":"spr_final_smash3_clouds1","path":"sprites/spr_final_smash3_clouds1/spr_final_smash3_clouds1.yy",},"order":74,},

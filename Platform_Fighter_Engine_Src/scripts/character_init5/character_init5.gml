@@ -270,8 +270,8 @@ function character_init5() {
 		{
 		sprite_scale = 2;
 	
-		my_sprites[$ "Entrance"	] = anim_define(spr_entrance0, anim_define(spr_idle0));
-		my_sprites[$ "Idle"		] = spr_idle0;
+		my_sprites[$ "Entrance"	] = anim_define(spr_entrance0, anim_define(spr_idle5));
+		my_sprites[$ "Idle"		] = spr_idle5;
 		my_sprites[$ "Crouch"	] = anim_define(spr_crouch_begin0, anim_define(spr_crouch0));
 		my_sprites[$ "Walk"		] = spr_walk0;
 		my_sprites[$ "Walk_Turn"] = spr_walk0;
