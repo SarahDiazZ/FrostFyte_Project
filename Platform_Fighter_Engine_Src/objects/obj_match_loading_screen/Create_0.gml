@@ -42,30 +42,11 @@ for(var i = 0; i < _num; i++)
 //Stage textures
 switch(setting().match_stage)
 	{
-	case rm_small_campground:
-	case rm_large_campground:
-		array_push(textures_needed, "texture_campgrounds");
+	case rm_warpgate:
+		array_push(textures_needed, "texture_warpgate")
 		break;
-	case rm_battlefield:
-		array_push(textures_needed, "texture_battlefield");
-		break;
-	case rm_peak:
-		array_push(textures_needed, "texture_peak");
-		break;
-	case rm_desert:
-		array_push(textures_needed, "texture_desert");
-		break;
-	case rm_lava:
-		array_push(textures_needed, "texture_lava");
-		break;
-	case rm_clouds:
-		array_push(textures_needed, "texture_clouds");
-		break;
-	case rm_library:
-		array_push(textures_needed, "texture_library");
-		break;
-	case rm_haven:
-		array_push(textures_needed, "texture_haven");
+	case rm_speedhighway:
+		array_push(textures_needed, "texture_speedhighway")
 		break;
 	}
 	

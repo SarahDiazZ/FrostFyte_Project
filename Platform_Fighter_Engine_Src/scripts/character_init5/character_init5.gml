@@ -230,7 +230,7 @@ function character_init5() {
 		my_attacks[$ "DashAtk"	] = dash_attack_claw;
 		my_attacks[$ "Ftilt"	] = ftilt0;
 		my_attacks[$ "Utilt"	] = utilt0;
-		my_attacks[$ "Dtilt"	] = dtilt0;
+		my_attacks[$ "Dtilt"	] = dtilt5;
 				 
 		my_attacks[$ "Fsmash"	] = fsmash_chrom;
 		my_attacks[$ "Usmash"	] = usmash0;
@@ -270,28 +270,28 @@ function character_init5() {
 		{
 		sprite_scale = 2;
 	
-		my_sprites[$ "Entrance"	] = anim_define(spr_entrance0, anim_define(spr_idle5));
+		my_sprites[$ "Entrance"	] = anim_define(spr_entrance5, anim_define(spr_idle5));
 		my_sprites[$ "Idle"		] = spr_idle5;
-		my_sprites[$ "Crouch"	] = anim_define(spr_crouch_begin0, anim_define(spr_crouch0));
-		my_sprites[$ "Walk"		] = spr_walk0;
-		my_sprites[$ "Walk_Turn"] = spr_walk0;
-		my_sprites[$ "Dash"		] = spr_run0;
-		my_sprites[$ "Run"		] = spr_run0;
-		my_sprites[$ "Run_Turn" ] = spr_run0;
-		my_sprites[$ "Run_Stop"	] = spr_run_stop0;
+		my_sprites[$ "Crouch"	] = spr_crouch5;
+		my_sprites[$ "Walk"		] = spr_walk5;
+		my_sprites[$ "Walk_Turn"] = spr_turnaround5;
+		my_sprites[$ "Dash"		] = spr_run5;
+		my_sprites[$ "Run"		] = spr_run5;
+		my_sprites[$ "Run_Turn" ] = spr_turnaround5;
+		my_sprites[$ "Run_Stop"	] = spr_walk5;
 				 
-		my_sprites[$ "JumpSquat"] = spr_jumpsquat0;
-		my_sprites[$ "JumpRise"	] = spr_jump_rise0;
-		my_sprites[$ "JumpMid"	] = spr_jump_mid0;
-		my_sprites[$ "JumpFall"	] = spr_jump_fall0;
-		my_sprites[$ "Fastfall"	] = spr_fastfall0;
-		my_sprites[$ "DJumpRise"] = anim_define(spr_djump_rise0, anim_define(spr_jump_fall0));
+		my_sprites[$ "JumpSquat"] = spr_jumpsquat5;
+		my_sprites[$ "JumpRise"	] = spr_jumprise5;
+		my_sprites[$ "JumpMid"	] = spr_jumpmid5;
+		my_sprites[$ "JumpFall"	] = spr_jumpfall5;
+		my_sprites[$ "Fastfall"	] = spr_fastfall5;
+		my_sprites[$ "DJumpRise"] = anim_define(spr_jumprise5, anim_define(spr_jumpfall5));
 		my_sprites[$ "DJumpMid"	] = -1;
 		my_sprites[$ "DJumpFall"] = -1;
 		my_sprites[$ "DFastfall"] = -1;
 				 
-		my_sprites[$ "Airdodge"	] = spr_airdodge0;
-		my_sprites[$ "Waveland"	] = spr_waveland0;
+		my_sprites[$ "Airdodge"	] = spr_airdodge5;
+		my_sprites[$ "Waveland"	] = spr_waveland5;
 		my_sprites[$ "Rolling"	] = spr_rolling0;
 		my_sprites[$ "Shield"	] = anim_define(spr_shield_start0, anim_define(spr_shield0));
 		my_sprites[$ "ShieldR"	] = spr_shield_release0;
@@ -305,7 +305,7 @@ function character_init5() {
 		my_sprites[$ "Helpless"	] = spr_helpless0;
 		my_sprites[$ "Magnet"	] = spr_hitlag0;
 		my_sprites[$ "Flinch"	] = spr_crouch0;
-		my_sprites[$ "Lag"		] = spr_crouch0;
+		my_sprites[$ "Lag"		] = spr_waveland5;
 		my_sprites[$ "Balloon"	] = spr_balloon0;
 		my_sprites[$ "Reeling"	] = spr_reeling0;
 		my_sprites[$ "Knockdown"] = anim_define_ext(spr_knockdown0, 2, 0.7, 1, 0, 1, 0, 0, false, anim_define_ext(spr_knockdown0, 6, 0));

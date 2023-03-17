@@ -277,63 +277,6 @@ function simple_attack_definitions() {
 			},
 		true,
 		);
-	//Character 3's Up Tilt
-	simple_attack_define
-		(
-		"utilt3_sim",
-			{
-			sprite : spr_utilt3,
-			type : "ground",
-			movement : "ground",
-			hurtbox : spr_utilt3_hurtbox,
-			state_end : PLAYER_STATE.idle,
-			windows:
-				[
-				//Startup
-				{ length : 8, anim_start : 0, anim_end : 2 },
-				//Active
-					{
-					length : 3,
-					hitboxes : 
-						[
-							//Hit 1
-							{
-							frame : 0,
-							anim_frame : 3,
-							type : "magnetbox",
-							args : [57, -20, 0.8, 1, 3, 6, 22, -68, 10, 1, SHAPE.circle, 0, true],
-							vars : { hit_vfx_style : HIT_VFX.normal_weak, hit_sfx : snd_hit_weak2 },
-							},
-							{
-							frame : 0,
-							type : "magnetbox",
-							args : [29, 6, 0.6, 0.8, 3, 6, 22, -68, 10, 1, SHAPE.circle, 0, true],
-							vars : { hit_vfx_style : HIT_VFX.normal_weak, hit_sfx : snd_hit_weak },
-							},
-							{
-							frame : 1,
-							anim_frame : 4,
-							type : "magnetbox",
-							args : [50, -54, 0.6, 0.6, 3, 6, 22, -68, 8, 1, SHAPE.circle, 0, true],
-							vars : { hit_vfx_style : HIT_VFX.normal_weak, hit_sfx : snd_hit_weak },
-							},
-							//Hit 2
-							{
-							frame : 2,
-							anim_frame : 5,
-							type : "melee",
-							args : [22, -68, 0.75, 0.75, 6, 10, 0.9, 11, 90, 4, SHAPE.circle, 1],
-							vars : { hit_vfx_style : HIT_VFX.normal_medium, hit_sfx : snd_hit_strong3, knockback_state : PLAYER_STATE.balloon },
-							},
-						],
-					},
-				{ length : 8, anim_start : 6, anim_end : 7 },
-				//Endlag
-				{ length : 14, whiff_lag : 9, anim_start : 7, anim_end : 10 },
-				],
-			},
-		true,
-		);
 	//Cloud's Back Air
 	simple_attack_define
 		(

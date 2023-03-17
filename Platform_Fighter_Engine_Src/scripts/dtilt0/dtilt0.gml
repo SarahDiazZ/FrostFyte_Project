@@ -15,7 +15,7 @@ function dtilt0() {
 			case PHASE.start:
 				{
 				//Animation
-				anim_sprite = spr_dtilt0;
+				anim_sprite = spr_dtilt5;
 				anim_frame = 0;
 				anim_speed = 0;
 		

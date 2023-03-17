@@ -15,7 +15,7 @@ function setting() {
 		debug_mode_enable :					false, //{bool} Whether the game will be run in debug mode or not. Debug mode enables players to use the function keys to turn on debug overlays.
 		replay_mode :						false, //{bool} Whether the game is playing back a replay or not.
 		replay_record :						true, //{bool} Whether the game can record replays or not.
-		match_stage :						rm_large_campground, //{asset} The stage the match will use.
+		match_stage :						rm_warpgate, //{asset} The stage the match will use.
 		match_stock :						match_stock_default, //{int} The number of stocks each player in the match will start with. The default value is <match_stock_default>.
 		match_time :						match_time_default, //{real} The amount of time the match will take. The default value is <match_time_default>.
 		match_stamina :						match_stamina_default, //{int} The amount of stamina each player in the match will start with. The default value is <match_stamina_default>.
