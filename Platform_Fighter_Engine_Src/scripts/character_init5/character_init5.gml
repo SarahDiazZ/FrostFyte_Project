@@ -226,10 +226,10 @@ function character_init5() {
 	//Attacks
 	if (_set_attacks)
 		{
-		my_attacks[$ "Jab"		] = jab_chrom;
+		my_attacks[$ "Jab"		] = ntilt5;
 		my_attacks[$ "DashAtk"	] = dash_attack_claw;
-		my_attacks[$ "Ftilt"	] = ftilt0;
-		my_attacks[$ "Utilt"	] = utilt0;
+		my_attacks[$ "Ftilt"	] = stilt5;
+		my_attacks[$ "Utilt"	] = utilt5;
 		my_attacks[$ "Dtilt"	] = dtilt5;
 				 
 		my_attacks[$ "Fsmash"	] = fsmash_chrom;

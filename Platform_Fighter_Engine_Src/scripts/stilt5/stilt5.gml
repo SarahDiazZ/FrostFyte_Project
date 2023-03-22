@@ -1,5 +1,5 @@
-function dtilt5() {
-	//Down Tilt for character5
+function stilt5() {
+	//Side Tilt for character5
 	var run = true;
 	var _phase = argument_count > 0 ? argument[0] : attack_phase;
 	//Timer
@@ -15,7 +15,7 @@ function dtilt5() {
 			case PHASE.start:
 				{
 				//Animation
-				anim_sprite = spr_dtilt5;
+				anim_sprite = spr_stilt5;
 				anim_frame = 0;
 				anim_speed = 0;
 		
@@ -33,13 +33,13 @@ function dtilt5() {
 					attack_frame = 4;
 					
 					//Ledge hitbox
-					var _hitbox = hitbox_create_melee(20, 0, .42, 0.4, 5, 7, 0.4, 3, 75, 3, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(16, 0, .5, .47, 5, 7, 0.4, 3, 75, 3, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hitstun_scaling = 3;
 					_hitbox.hit_restriction = HIT_RESTRICTION.ledge_only;
 					
 					//Normal hitbox
-					var _hitbox = hitbox_create_melee(20, 0, .42, 0.4, 5, 7, 0.4, 3, 75, 3, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(16, 0, .5, .47, 5, 7, 0.4, 3, 75, 3, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hitstun_scaling = 6.5;
 					_hitbox.can_lock = true;
