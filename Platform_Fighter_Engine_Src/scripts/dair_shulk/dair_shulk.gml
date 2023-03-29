@@ -1,5 +1,5 @@
-function dair_shulk() {
-	//Down Aerial
+function dair_5() {
+	//Down air for Alex
 	var run = true;
 	var _phase = argument_count > 0 ? argument[0] : attack_phase;
 	//Timer
@@ -19,11 +19,11 @@ function dair_shulk() {
 			case PHASE.start:
 				{
 				//Animation
-				anim_sprite = spr_dair_shulk;
+				anim_sprite = spr_dair5;
 				anim_speed = 0;
 				anim_frame = 0;
 				landing_lag = 14;
-				speed_set(0, -1, true, true);
+				speed_set(0, 1, true, true);
 				attack_frame = 12;
 				return;
 				}

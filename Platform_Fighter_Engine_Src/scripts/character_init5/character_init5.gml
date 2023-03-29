@@ -236,11 +236,11 @@ function character_init5() {
 		my_attacks[$ "Usmash"	] = usmash0;
 		my_attacks[$ "Dsmash"	] = dsmash0;
 				 
-		my_attacks[$ "Nair"		] = nair_joker;
-		my_attacks[$ "Fair"		] = fair_bayonetta;
-		my_attacks[$ "Bair"		] = "bair_cloud_sim";
-		my_attacks[$ "Uair"		] = uair_cloud;
-		my_attacks[$ "Dair"		] = dair_shulk;
+		my_attacks[$ "Nair"		] = nair5;
+		my_attacks[$ "Fair"		] = fair5;
+		my_attacks[$ "Bair"		] = bair5;
+		my_attacks[$ "Uair"		] = uair5;
+		my_attacks[$ "Dair"		] = dair5;
 				 
 		my_attacks[$ "Nspec"	] = nspec_hadoken;
 		my_attacks[$ "Fspec"	] = fspec_afterburner_kick;

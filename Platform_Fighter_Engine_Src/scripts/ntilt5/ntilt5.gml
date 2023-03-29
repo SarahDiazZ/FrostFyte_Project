@@ -19,7 +19,7 @@ function ntilt5() {
 				anim_frame = 0;
 				anim_speed = 0;
 		
-				attack_frame = 6;
+				attack_frame = 2;
 				return;
 				}
 			//Startup
