@@ -42,7 +42,7 @@ function dair5() {
 					attack_frame = 13;
 					
 					//Initial hit
-					var _hitbox = hitbox_create_melee(0, 11, .65, .33, 4, 3, 0.1, 8, 0, 2, SHAPE.square, 0, FLIPPER.autolink_center);
+					var _hitbox = hitbox_create_melee(0, 11, .65, .33, 4, 3, 0.1, 8, 0, 2, SHAPE.square, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hit_sfx = snd_hit_weak2;
 					_hitbox.di_angle = 0;
