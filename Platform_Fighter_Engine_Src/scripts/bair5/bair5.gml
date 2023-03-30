@@ -23,7 +23,7 @@ function bair5() {
 				anim_speed = 0;
 				anim_frame = 0;
 				landing_lag = 5;
-				speed_set(30, 0, false, false);
+				speed_set(30 * facing, 0, false, false);
 				attack_frame = 1;
 				return;
 				}
@@ -38,7 +38,7 @@ function bair5() {
 					anim_frame = 1;
 			
 					attack_phase++;
-					attack_frame = 0;
+					attack_frame = 4;
 					
 					//Initial hit
 					var _hitbox = hitbox_create_melee(-13, 5, .29, .14, 7, 10, 0.5, 4, 180, 4, SHAPE.square, 0);
@@ -52,10 +52,27 @@ function bair5() {
 					}
 				break;
 				}
-			
+			//Active
+			case 1:
+				{
+				if (attack_frame == 0)
+					{
+					anim_frame = 1;
+				
+					attack_phase++;
+					//Whiff lag
+					attack_frame = attack_connected() ? 7 : 16;
+					}
+				break;
+				}
 			//Finish
 			case 2:
 				{
+				if (attack_frame == 11)
+					anim_frame = 3;
+				if (attack_frame == 5)
+					anim_frame = 4;
+				//Animation
 				if (attack_frame == 0)
 					{
 					attack_stop(PLAYER_STATE.aerial);

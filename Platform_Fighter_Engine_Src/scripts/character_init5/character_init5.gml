@@ -246,6 +246,23 @@ function character_init5() {
 		my_attacks[$ "Fspec"	] = fspec_afterburner_kick;
 		my_attacks[$ "Uspec"	] = uspec_zss;
 		my_attacks[$ "Dspec"	] = dspec_falling_attack;
+		
+		my_attacks[$ "Grab"		] = grab0;
+		my_attacks[$ "DashGrab"	] = dash_grab0;
+		my_attacks[$ "Pummel"	] = pummel0;
+		my_attacks[$ "Zair"		] = -1;
+				 
+		my_attacks[$ "FThrow"	] = fthrow0;
+		my_attacks[$ "BThrow"	] = bthrow0;
+		my_attacks[$ "UThrow"	] = uthrow_combo;
+		my_attacks[$ "DThrow"	] = dthrow_combo;
+		
+		my_attacks[$ "GetupAtk"	] = getup_attack0;
+		my_attacks[$ "LedgeAtk"	] = ledge_attack0;
+		my_attacks[$ "ItemThrow"] = item_throw0;
+		my_attacks[$ "ItemAtk"	] = item_attack0;
+		my_attacks[$ "Taunt"	] = taunt0;
+		my_attacks[$ "Final"	] = final_smash0;
 		}
 		
 	//Animations / Sprites
