@@ -232,9 +232,9 @@ function character_init5() {
 		my_attacks[$ "Utilt"	] = utilt5;
 		my_attacks[$ "Dtilt"	] = dtilt5;
 				 
-		my_attacks[$ "Fsmash"	] = fsmash_chrom;
-		my_attacks[$ "Usmash"	] = usmash0;
-		my_attacks[$ "Dsmash"	] = dsmash0;
+		my_attacks[$ "Fsmash"	] = fsmash5;
+		my_attacks[$ "Usmash"	] = usmash5;
+		my_attacks[$ "Dsmash"	] = dsmash5;
 				 
 		my_attacks[$ "Nair"		] = nair5;
 		my_attacks[$ "Fair"		] = fair5;

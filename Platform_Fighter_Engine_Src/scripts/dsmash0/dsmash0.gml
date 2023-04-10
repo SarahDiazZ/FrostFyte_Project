@@ -1,5 +1,5 @@
 function dsmash0() {
-	//Down Smash for character0
+	//Down Smash for Alex
 	var run = true;
 	var _phase = argument_count > 0 ? argument[0] : attack_phase;
 	
