@@ -38,13 +38,6 @@ function main_menu_sidebar_choose() {
 				}
 			break;
 		case 5:
-			//Main Menu
-			if (room != rm_main_menu)
-				{
-				room_goto(rm_main_menu);
-				}
-			break;
-		case 6:
 			//Quit
 			game_end();
 			break;

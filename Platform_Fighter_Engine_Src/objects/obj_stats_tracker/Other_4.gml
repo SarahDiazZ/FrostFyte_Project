@@ -1,5 +1,5 @@
 ///@description Update certain stats
-if (room == rm_main_menu)
+if (room == rm_css)
 	{
 	//Calculate how long the game has been open
 	var _total_minutes = floor(date_minute_span(date_current_datetime(), starting_time));
