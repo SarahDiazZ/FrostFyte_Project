@@ -87,6 +87,39 @@ function character_init5() {
 		ledge_hang_relative_x = -18;
 		ledge_hang_relative_y = 22;
 		
+		//Airdodge Values
+		if (airdodge_type == AIRDODGE_TYPE.momentum_stop)
+			{
+			airdodge_speed = 9;
+			airdodge_startup = 2;
+			airdodge_active = 10;
+			airdodge_endlag = 16;
+			waveland_speed_boost = 1;
+			waveland_time = 8;
+			waveland_friction = 0.24;
+			}
+		else if (airdodge_type == AIRDODGE_TYPE.momentum_keep)
+			{
+			airdodge_startup = 1;
+			airdodge_active = 18;
+			airdodge_endlag = 10;
+			airdodge_land_time = 12;
+			}
+		else if (airdodge_type == AIRDODGE_TYPE.accelerate)
+			{
+			airdodge_startup = 3;
+			airdodge_active = 27;
+			airdodge_endlag = 17;
+			airdodge_land_time = 10;
+			airdodge_dir_windup_speed = 9;
+			airdodge_dir_speed_min = 8;
+			airdodge_dir_speed_max = 9;
+			airdodge_dir_active = 18;
+			airdodge_dir_endlag_min = 20;
+			airdodge_dir_endlag_max = 45;
+			airdodge_dir_grav = 0.2;
+			}
+		
 		//Shield Values
 		if (shield_type == SHIELD_TYPE.perfect_shield_start)
 			{
@@ -127,6 +160,26 @@ function character_init5() {
 			spot_dodge_startup = 3;
 			spot_dodge_active = 14;
 			spot_dodge_endlag = 14;
+			}
+			
+		//Wall jump Values
+		if (wall_jump_type == WALL_JUMP_TYPE.jump_press)
+			{
+			wall_jump_startup = 2;
+			wall_jump_time = 8;
+			wall_jump_hsp = 7;
+			wall_jump_vsp = -8;
+			max_wall_jumps = 1;
+			can_wall_cling = false;
+			}
+		else if (wall_jump_type == WALL_JUMP_TYPE.stick_flick)
+			{
+			can_wall_jump = true;
+			wall_jump_startup = 5;
+			wall_jump_time = 8;
+			wall_jump_hsp = 7;
+			wall_jump_vsp = -9;
+			can_wall_cling = false;
 			}
 	
 		//Rolling
