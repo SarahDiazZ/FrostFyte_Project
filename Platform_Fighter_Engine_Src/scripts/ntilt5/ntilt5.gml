@@ -32,14 +32,8 @@ function ntilt5() {
 					attack_phase++;
 					attack_frame = 4;
 					
-					//Ledge hitbox
-					var _hitbox = hitbox_create_melee(25, 1, .63, .14, 5, 7, 0.4, 3, 75, 3, SHAPE.circle, 0);
-					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
-					_hitbox.hitstun_scaling = 3;
-					_hitbox.hit_restriction = HIT_RESTRICTION.ledge_only;
-					
 					//Normal hitbox
-					var _hitbox = hitbox_create_melee(25, 1, .63, .14, 5, 7, 0.4, 3, 75, 3, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(25, 1, .63, .14, 6, 6, 0.2, 3, 0, 5, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hitstun_scaling = 6.5;
 					_hitbox.can_lock = true;
@@ -86,4 +80,3 @@ function ntilt5() {
 		hurtbox_anim_set(hurtbox_crouch_sprite, 0, facing, 1, 0);
 		}
 }
-/* Copyright 2023 Springroll Games / Yosi */

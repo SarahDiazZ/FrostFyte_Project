@@ -41,7 +41,7 @@ function uair5() {
 					attack_frame = 4;
 					
 					//Initial hit
-					var _hitbox = hitbox_create_melee(0, -10, .20, .40, 4, 3, 0.1, 8, 0, 2, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(0, -10, .20, .40, 6, 5, 0, 4, 90, 5, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hit_sfx = snd_hit_weak2;
 					_hitbox.di_angle = 0;
@@ -83,4 +83,3 @@ function uair5() {
 	//Movement
 	move();
 }
-/* Copyright 2023 Springroll Games / Yosi */

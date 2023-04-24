@@ -25,7 +25,7 @@ function dsmash5() {
 				charge = 0;
 		
 				attack_frame = 6;
-				hurtbox_anim_set(spr_hurtbox_crouch0, 0, 1, 1, 0);
+				hurtbox_anim_set(spr_hurtbox_crouch5, 0, 1, 1, 0);
 				return;
 				}
 			//Charging -> Startup
@@ -45,7 +45,6 @@ function dsmash5() {
 						attack_frame = 4;
 						}
 						
-					//Animation (every 8 frames switch the sprite)
 					if (charge % 8 == 0)
 						{
 						if (anim_frame == 0)
@@ -55,9 +54,6 @@ function dsmash5() {
 						else
 							{
 							anim_frame = 0;
-						
-							//Shine VFX
-							vfx_create(spr_shine_attack, 1, 0, 8, x + prng_number(0, 20, -20), y + prng_number(1, 20, -20), 1, prng_number(0, 360));
 							}
 						}
 					}
@@ -76,7 +72,7 @@ function dsmash5() {
 				
 					attack_phase++;
 					attack_frame = 10;
-					var _hitbox = hitbox_create_magnetbox(-1, 9, 0.53, 0.13, 4, 6, 60 + hsp, -5, 13, 2, SHAPE.square, 0);
+					var _hitbox = hitbox_create_melee(-1, 9, 0.53, 0.13, 15, 7, 1.5, 8, 45, 5, SHAPE.square, 1);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					}
 				break;
@@ -99,16 +95,9 @@ function dsmash5() {
 					attack_phase++;
 					attack_frame = 6;
 					
-					//Ledge hitbox
-					var _damage = calculate_smash_damage(12);
-					var _hitbox = hitbox_create_melee(-1, 9, 0.53, 0.13, _damage, 7, 1.3, 7, 45, 2, SHAPE.square, 1);
-					_hitbox.hit_vfx_style = HIT_VFX.slash_strong;
-					_hitbox.hit_sfx = snd_hit_strong;
-					_hitbox.knockback_state = PLAYER_STATE.balloon;
-					_hitbox.hit_restriction = HIT_RESTRICTION.ledge_only;
 					
-					//Normal hitbox
-					var _hitbox = hitbox_create_melee(-1, 9, 0.53, 0.13, _damage, 7, 1.3, 7, 45, 2, SHAPE.square, 1);
+					
+					var _hitbox = hitbox_create_melee(-1, 9, 0.53, 0.13, 15, 7, 1.5, 8, 45, 5, SHAPE.square, 1);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_strong;
 					_hitbox.hit_sfx = snd_hit_strong;
 					_hitbox.knockback_state = PLAYER_STATE.balloon;
@@ -149,4 +138,3 @@ function dsmash5() {
 	//Movement
 	move_grounded();
 }
-/* Copyright 2023 Springroll Games / Yosi */

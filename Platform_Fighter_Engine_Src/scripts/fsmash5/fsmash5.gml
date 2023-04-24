@@ -25,7 +25,7 @@ function fsmash5() {
 				charge = 0;
 		
 				attack_frame = 6;
-				hurtbox_anim_set(spr_hurtbox_crouch0, 0, 1, 1, 0);
+				hurtbox_anim_set(spr_hurtbox_crouch5, 0, 1, 1, 0);
 				return;
 				}
 			//Charging -> Startup
@@ -55,9 +55,6 @@ function fsmash5() {
 						else
 							{
 							anim_frame = 0;
-						
-							//Shine VFX
-							vfx_create(spr_shine_attack, 1, 0, 8, x + prng_number(0, 20, -20), y + prng_number(1, 20, -20), 1, prng_number(0, 360));
 							}
 						}
 					}
@@ -76,7 +73,7 @@ function fsmash5() {
 				
 					attack_phase++;
 					attack_frame = 10;
-					var _hitbox = hitbox_create_magnetbox(15, 0, 0.59, 0.22, 4, 6, 60 + hsp, -5, 13, 2, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(15, 0, 0.59, 0.22, 13, 6, 1.4, 8, 30, 11, SHAPE.circle, 1);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					}
 				break;
@@ -99,16 +96,8 @@ function fsmash5() {
 					attack_phase++;
 					attack_frame = 6;
 					
-					//Ledge hitbox
-					var _damage = calculate_smash_damage(12);
-					var _hitbox = hitbox_create_melee(15, 0, 0.59, 0.22, _damage, 7, 1.3, 7, 45, 2, SHAPE.circle, 1);
-					_hitbox.hit_vfx_style = HIT_VFX.slash_strong;
-					_hitbox.hit_sfx = snd_hit_strong;
-					_hitbox.knockback_state = PLAYER_STATE.balloon;
-					_hitbox.hit_restriction = HIT_RESTRICTION.ledge_only;
-					
 					//Normal hitbox
-					var _hitbox = hitbox_create_melee(15, 0, 0.59, 0.22, _damage, 7, 1.3, 7, 45, 2, SHAPE.circle, 1);
+					var _hitbox = hitbox_create_melee(15, 0, 0.59, 0.22, 13, 6, 1.4, 8, 30, 5, SHAPE.circle, 1);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_strong;
 					_hitbox.hit_sfx = snd_hit_strong;
 					_hitbox.knockback_state = PLAYER_STATE.balloon;
@@ -149,4 +138,3 @@ function fsmash5() {
 	//Movement
 	move_grounded();
 }
-/* Copyright 2023 Springroll Games / Yosi */

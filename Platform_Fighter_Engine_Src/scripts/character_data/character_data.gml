@@ -7,19 +7,6 @@ function character_data_get_all() {
 		[
 		character_define
 			(
-			"Blocky",
-			character_init0,
-			spr_render0,
-			spr_css0,
-			spr_palette0,
-			spr_portrait0,
-			spr_stock0,
-			song_victory0,
-			["texture_character0"],
-			cpu_script0,
-			),
-		character_define
-			(
 			"Alex",
 			character_init5,
 			spr_render5,

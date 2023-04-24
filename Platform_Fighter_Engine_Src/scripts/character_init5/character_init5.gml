@@ -6,7 +6,6 @@ function character_init5() {
 			"This may be caused by putting parentheses after a script name in Character Data.\n");
 		}
 		
-	//Determine which variables to set
 	var _set_properties = argument_count > 0 ? argument[0] : true;
 	var _set_states = argument_count > 1 ? argument[1] : true;
 	var _set_attacks = argument_count > 2 ? argument[2] : true;
@@ -19,19 +18,19 @@ function character_init5() {
 		collision_box = spr_collision_mask_medium;
 	
 		//Hurtbox
-		hurtbox_sprite = spr_hurtbox0;
-		hurtbox_crouch_sprite = spr_hurtbox_crouch0;
+		hurtbox_sprite = spr_hurtbox5;
+		hurtbox_crouch_sprite = spr_hurtbox_crouch5;
 	
 		//Weight
 		weight_multiplier = 1;
 	
 		//Gravity
-		grav = 0.5;
-		hitstun_grav = 0.5;
+		grav = 0.6;
+		hitstun_grav = 0.7;
 	
 		//Falling
-		max_fall_speed = 10;
-		fastfall_speed = 14;
+		max_fall_speed = 11;
+		fastfall_speed = 16;
 	
 		//Jumping
 		jumpsquat_time = 3;
@@ -87,39 +86,6 @@ function character_init5() {
 		//variables allow you to add an offset.
 		ledge_hang_relative_x = -18;
 		ledge_hang_relative_y = 22;
-	
-		//Airdodge Values
-		if (airdodge_type == AIRDODGE_TYPE.momentum_stop)
-			{
-			airdodge_speed = 9;
-			airdodge_startup = 2;
-			airdodge_active = 10;
-			airdodge_endlag = 16;
-			waveland_speed_boost = 1;
-			waveland_time = 8;
-			waveland_friction = 0.24;
-			}
-		else if (airdodge_type == AIRDODGE_TYPE.momentum_keep)
-			{
-			airdodge_startup = 1;
-			airdodge_active = 18;
-			airdodge_endlag = 10;
-			airdodge_land_time = 12;
-			}
-		else if (airdodge_type == AIRDODGE_TYPE.accelerate)
-			{
-			airdodge_startup = 3;
-			airdodge_active = 27;
-			airdodge_endlag = 17;
-			airdodge_land_time = 10;
-			airdodge_dir_windup_speed = 9;
-			airdodge_dir_speed_min = 8;
-			airdodge_dir_speed_max = 9;
-			airdodge_dir_active = 18;
-			airdodge_dir_endlag_min = 20;
-			airdodge_dir_endlag_max = 45;
-			airdodge_dir_grav = 0.2;
-			}
 		
 		//Shield Values
 		if (shield_type == SHIELD_TYPE.perfect_shield_start)
@@ -162,26 +128,6 @@ function character_init5() {
 			spot_dodge_active = 14;
 			spot_dodge_endlag = 14;
 			}
-		
-		//Wall jump Values
-		if (wall_jump_type == WALL_JUMP_TYPE.jump_press)
-			{
-			wall_jump_startup = 2;
-			wall_jump_time = 8;
-			wall_jump_hsp = 7;
-			wall_jump_vsp = -8;
-			max_wall_jumps = 1;
-			can_wall_cling = false;
-			}
-		else if (wall_jump_type == WALL_JUMP_TYPE.stick_flick)
-			{
-			can_wall_jump = true;
-			wall_jump_startup = 5;
-			wall_jump_time = 8;
-			wall_jump_hsp = 7;
-			wall_jump_vsp = -9;
-			can_wall_cling = false;
-			}
 	
 		//Rolling
 		roll_speed = 9;
@@ -218,16 +164,13 @@ function character_init5() {
 	if (_set_states)
 		{
 		player_states_init();
-		
-		//You can set custom states for a character here, for example:
-		//my_states[@ PLAYER_STATE.idle] = <some custom idle script>;
 		}
 
 	//Attacks
 	if (_set_attacks)
 		{
 		my_attacks[$ "Jab"		] = ntilt5;
-		my_attacks[$ "DashAtk"	] = dash_attack_claw;
+		my_attacks[$ "DashAtk"	] = -1;
 		my_attacks[$ "Ftilt"	] = stilt5;
 		my_attacks[$ "Utilt"	] = utilt5;
 		my_attacks[$ "Dtilt"	] = dtilt5;
@@ -242,27 +185,27 @@ function character_init5() {
 		my_attacks[$ "Uair"		] = uair5;
 		my_attacks[$ "Dair"		] = dair5;
 				 
-		my_attacks[$ "Nspec"	] = nspec_hadoken;
-		my_attacks[$ "Fspec"	] = fspec_afterburner_kick;
-		my_attacks[$ "Uspec"	] = uspec_zss;
-		my_attacks[$ "Dspec"	] = dspec_falling_attack;
+		my_attacks[$ "Nspec"	] = -1;
+		my_attacks[$ "Fspec"	] = -1;
+		my_attacks[$ "Uspec"	] = -1;
+		my_attacks[$ "Dspec"	] = -1;
 		
-		my_attacks[$ "Grab"		] = grab0;
-		my_attacks[$ "DashGrab"	] = dash_grab0;
-		my_attacks[$ "Pummel"	] = pummel0;
+		my_attacks[$ "Grab"		] = -1;
+		my_attacks[$ "DashGrab"	] = -1;
+		my_attacks[$ "Pummel"	] = -1;
 		my_attacks[$ "Zair"		] = -1;
 				 
-		my_attacks[$ "FThrow"	] = fthrow0;
-		my_attacks[$ "BThrow"	] = bthrow0;
-		my_attacks[$ "UThrow"	] = uthrow_combo;
-		my_attacks[$ "DThrow"	] = dthrow_combo;
+		my_attacks[$ "FThrow"	] = -1;
+		my_attacks[$ "BThrow"	] = -1;
+		my_attacks[$ "UThrow"	] = -1;
+		my_attacks[$ "DThrow"	] = -1;
 		
-		my_attacks[$ "GetupAtk"	] = getup_attack0;
-		my_attacks[$ "LedgeAtk"	] = ledge_attack0;
-		my_attacks[$ "ItemThrow"] = item_throw0;
-		my_attacks[$ "ItemAtk"	] = item_attack0;
-		my_attacks[$ "Taunt"	] = taunt0;
-		my_attacks[$ "Final"	] = final_smash0;
+		my_attacks[$ "GetupAtk"	] = -1;
+		my_attacks[$ "LedgeAtk"	] = -1;
+		my_attacks[$ "ItemThrow"] = -1;
+		my_attacks[$ "ItemAtk"	] = -1;
+		my_attacks[$ "Taunt"	] = -1;
+		my_attacks[$ "Final"	] = -1;
 		}
 		
 	//Animations / Sprites
@@ -292,49 +235,48 @@ function character_init5() {
 				 
 		my_sprites[$ "Airdodge"	] = spr_airdodge5;
 		my_sprites[$ "Waveland"	] = spr_waveland5;
-		my_sprites[$ "Rolling"	] = spr_rolling0;
-		my_sprites[$ "Shield"	] = anim_define(spr_shield_start0, anim_define(spr_shield0));
-		my_sprites[$ "ShieldR"	] = spr_shield_release0;
-		my_sprites[$ "ShieldB"	] = anim_define_ext(spr_shield_break0, 0, 0.12, 1, 0, 1, 0, 0, true, -1);
-		my_sprites[$ "ParryS"	] = spr_parry_stun0;
-		my_sprites[$ "SDodge"	] = spr_spot_dodge0;
+		my_sprites[$ "Rolling"	] = -1;
+		my_sprites[$ "Shield"	] = anim_define(spr_shield5, anim_define(spr_shield5));
+		my_sprites[$ "ShieldR"	] = -1;
+		my_sprites[$ "ShieldB"	] = anim_define_ext(-1, 0, 0.12, 1, 0, 1, 0, 0, true, -1);
+		my_sprites[$ "ParryS"	] = -1;
+		my_sprites[$ "SDodge"	] = -1;
 				 
-		my_sprites[$ "Hitlag"	] = spr_hitlag0;
-		my_sprites[$ "Hitstun"	] = spr_hitstun0;
-		my_sprites[$ "Tumble"	] = spr_tumble0;
-		my_sprites[$ "Helpless"	] = spr_helpless0;
-		my_sprites[$ "Magnet"	] = spr_hitlag0;
-		my_sprites[$ "Flinch"	] = spr_crouch0;
+		my_sprites[$ "Hitlag"	] = spr_crouch5;
+		my_sprites[$ "Hitstun"	] = spr_crouch5;
+		my_sprites[$ "Tumble"	] = spr_crouch5;
+		my_sprites[$ "Helpless"	] = -1;
+		my_sprites[$ "Magnet"	] = -1;
+		my_sprites[$ "Flinch"	] = -1;
 		my_sprites[$ "Lag"		] = spr_waveland5;
-		my_sprites[$ "Balloon"	] = spr_balloon0;
-		my_sprites[$ "Reeling"	] = spr_reeling0;
-		my_sprites[$ "Knockdown"] = anim_define_ext(spr_knockdown0, 2, 0.7, 1, 0, 1, 0, 0, false, anim_define_ext(spr_knockdown0, 6, 0));
-		my_sprites[$ "Lock"		] = anim_define_ext(spr_knockdown0, 0, 0.5, 1, 0, 1, 0, 0, false, anim_define_ext(spr_knockdown0, 6, 0));
-		my_sprites[$ "Getup"	] = anim_define_ext(spr_getup0, 0, anim_calculate_speed(spr_getup0, getup_active + getup_endlag));
+		my_sprites[$ "Balloon"	] = -1;
+		my_sprites[$ "Reeling"	] = spr_crouch5;
+		my_sprites[$ "Knockdown"] = anim_define_ext(spr_crouch5, 2, 0.7, 1, 0, 1, 0, 0, false, anim_define_ext(spr_crouch5, 6, 0));
+		my_sprites[$ "Lock"		] = anim_define_ext(-1, 0, 0.5, 1, 0, 1, 0, 0, false, anim_define_ext(-1, 6, 0));
+		my_sprites[$ "Getup"	] = anim_define_ext(-1, 0, anim_calculate_speed(-1, getup_active + getup_endlag));
 	
-		my_sprites[$ "Techroll"	] = spr_rolling0; 
-		my_sprites[$ "Teching"	] = spr_teching0;
-		my_sprites[$ "TechingW"	] = spr_teching0;
-		my_sprites[$ "TechingC"	] = spr_teching0;
-		my_sprites[$ "Techjump"	] = spr_wall_jump0;
+		my_sprites[$ "Techroll"	] = -1; 
+		my_sprites[$ "Teching"	] = -1;
+		my_sprites[$ "TechingW"	] = -1;
+		my_sprites[$ "TechingC"	] = -1;
+		my_sprites[$ "Techjump"	] = -1;
 				 
-		my_sprites[$ "LedgeS"	] = spr_ledge_snap0;
-		my_sprites[$ "Ledge"	] = spr_ledge_hang0;
-		my_sprites[$ "LedgeG"	] = spr_ledge_getup0;
-		my_sprites[$ "LedgeJ"	] = spr_ledge_jump0;
-		my_sprites[$ "LedgeR"	] = spr_ledge_jump0;
-		my_sprites[$ "LedgeA"	] = spr_ledge_attack_getup0;
-		my_sprites[$ "LedgeT"	] = anim_define_ext(spr_ledge_tether0, 0, 0.3, 1, 0, 1, 0, 16, true, -1);
-		my_sprites[$ "LedgeTr"	] = spr_ledge_trump0;
+		my_sprites[$ "LedgeS"	] = -1;
+		my_sprites[$ "Ledge"	] = -1;
+		my_sprites[$ "LedgeG"	] = -1;
+		my_sprites[$ "LedgeJ"	] = -1;
+		my_sprites[$ "LedgeR"	] = -1;
+		my_sprites[$ "LedgeA"	] = -1;
+		my_sprites[$ "LedgeT"	] = anim_define_ext(-1, 0, 0.3, 1, 0, 1, 0, 16, true, -1);
+		my_sprites[$ "LedgeTr"	] = -1;
 		my_sprites[$ "WallC"	] = -1;
-		my_sprites[$ "WallJ"	] = spr_wall_jump0;
+		my_sprites[$ "WallJ"	] = -1;
 	
-		my_sprites[$ "StarKO"	] = spr_star_ko0;
-		my_sprites[$ "ScreenKO"	] = spr_screen_ko0;
+		my_sprites[$ "StarKO"	] = -1;
+		my_sprites[$ "ScreenKO"	] = -1;
 				 
-		my_sprites[$ "Grabbing"	] = spr_grabbing0;
-		my_sprites[$ "IsGrabbed"] = spr_hitstun0;
-		my_sprites[$ "GrabRel"	] = spr_crouch0;
+		my_sprites[$ "Grabbing"	] = -1;
+		my_sprites[$ "IsGrabbed"] = -1;
+		my_sprites[$ "GrabRel"	] = -1;
 		}
 }
-/* Copyright 2023 Springroll Games / Yosi */
