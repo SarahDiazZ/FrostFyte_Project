@@ -15,7 +15,7 @@ function css_player_add() {
 	var _cpu = argument[3];
 	var _custom = argument_count > 4 ? argument[4] : undefined;
 		
-	var _character = character_find("Random"); //Default to Random
+	var _character = character_find("Alex"); 
 	var _id = engine().css_index_current;
 	var _ready = false;
 		

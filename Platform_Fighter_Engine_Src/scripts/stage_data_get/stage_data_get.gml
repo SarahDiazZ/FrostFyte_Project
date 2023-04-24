@@ -1,11 +1,4 @@
-///@category Stages
-///@param {int} room		The stage to get the data for
-/*
-Returns a struct with the following properties based on the given stage:
-	- name : The name of the stage
-	- sprite : The sprite of the thumbnail
-	- frame : The subimage in the sprite
-*/
+// Gets data for the stages used on the character select.
 function stage_data_get() {
 	var _r = argument[0];
 	var _data =
@@ -33,4 +26,3 @@ function stage_data_get() {
 		
 	return _data;
 }
-/* Copyright 2023 Springroll Games / Yosi */
