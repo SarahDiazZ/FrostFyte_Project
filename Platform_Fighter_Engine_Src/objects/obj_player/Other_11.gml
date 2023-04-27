@@ -46,7 +46,7 @@ if (surface_exists(obj_game.game_surface))
 			}
 		else
 			{
-			draw_sprite_ext(spr_shield, 0, x + shield_shift_x, y + shield_shift_y, _size, _size, 0, make_color_hsv((player_number * 80) % 255, 255, 255), image_alpha);
+			draw_sprite_ext(spr_shieldAlex, 0, x + shield_shift_x, y + shield_shift_y, _size, _size, 0, make_color_hsv((player_number * 80) % 255, 255, 255), image_alpha);
 			}
 		}
 		

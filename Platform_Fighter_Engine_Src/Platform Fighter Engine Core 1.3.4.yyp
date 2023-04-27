@@ -521,6 +521,7 @@
     {"id":{"name":"dspec_hydrant_melee_hit","path":"scripts/dspec_hydrant_melee_hit/dspec_hydrant_melee_hit.yy",},"order":30,},
     {"id":{"name":"dspec_hydrant_projectile_hit","path":"scripts/dspec_hydrant_projectile_hit/dspec_hydrant_projectile_hit.yy",},"order":31,},
     {"id":{"name":"dspec_nosferatu","path":"scripts/dspec_nosferatu/dspec_nosferatu.yy",},"order":32,},
+    {"id":{"name":"spr_shieldAlex","path":"sprites/spr_shieldAlex/spr_shieldAlex.yy",},"order":41,},
     {"id":{"name":"dspec_rest","path":"scripts/dspec_rest/dspec_rest.yy",},"order":33,},
     {"id":{"name":"dspec_shine","path":"scripts/dspec_shine/dspec_shine.yy",},"order":34,},
     {"id":{"name":"ds_list_re_add","path":"scripts/ds_list_re_add/ds_list_re_add.yy",},"order":14,},
