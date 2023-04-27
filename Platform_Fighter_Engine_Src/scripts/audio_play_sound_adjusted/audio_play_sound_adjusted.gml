@@ -22,13 +22,13 @@ function audio_play_sound_adjusted() {
 	switch(_group)
 		{
 		case audiogroup_menu:
-			_volume *= setting().volume_menu;
+			_volume *= 0;
 			break;
 		case audiogroup_music:
-			_volume *= setting().volume_music;
+			_volume *= 0;
 			break;
 		case audiogroup_sound_effects:
-			_volume *= setting().volume_sound_effects;
+			_volume *= 0;
 			break;
 		}
 	var _snd = noone;

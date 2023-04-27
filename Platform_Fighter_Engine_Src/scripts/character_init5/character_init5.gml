@@ -25,12 +25,12 @@ function character_init5() {
 		weight_multiplier = 1;
 	
 		//Gravity
-		grav = 0.6;
+		grav = 0.72;
 		hitstun_grav = 0.7;
 	
 		//Falling
-		max_fall_speed = 11;
-		fastfall_speed = 16;
+		max_fall_speed = 14;
+		fastfall_speed = 17;
 	
 		//Jumping
 		jumpsquat_time = 3;
