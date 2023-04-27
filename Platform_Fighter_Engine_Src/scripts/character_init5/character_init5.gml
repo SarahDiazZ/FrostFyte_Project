@@ -141,7 +141,7 @@ function character_init5() {
 			parry_press_active = 8;
 			parry_press_endlag = 30;
 			parry_press_trigger_time = 15;
-			parry_press_script = parry_press0;
+			parry_press_script = spr_shield5;
 			}
 		else if (shield_type == SHIELD_TYPE.parry_shield)
 			{
@@ -156,7 +156,7 @@ function character_init5() {
 			parry_ult_window = 5;
 			parry_ult_freeze_time = 18;
 			parry_ult_self_freeze_time = 10;
-			parry_ult_sprite = spr_shield_release0;
+			parry_ult_sprite = spr_shield5;
 			spot_dodge_startup = 3;
 			spot_dodge_active = 14;
 			spot_dodge_endlag = 14;
@@ -238,10 +238,10 @@ function character_init5() {
 		my_attacks[$ "Uair"		] = uair5;
 		my_attacks[$ "Dair"		] = dair5;
 				 
-		my_attacks[$ "Nspec"	] = -1;
-		my_attacks[$ "Fspec"	] = -1;
-		my_attacks[$ "Uspec"	] = -1;
-		my_attacks[$ "Dspec"	] = -1;
+		my_attacks[$ "Nspec"	] = nspec5;
+		my_attacks[$ "Fspec"	] = sspec5;
+		my_attacks[$ "Uspec"	] = uspec5;
+		my_attacks[$ "Dspec"	] = dspec5;
 		
 		my_attacks[$ "Grab"		] = -1;
 		my_attacks[$ "DashGrab"	] = -1;
@@ -288,10 +288,10 @@ function character_init5() {
 				 
 		my_sprites[$ "Airdodge"	] = spr_airdodge5;
 		my_sprites[$ "Waveland"	] = spr_waveland5;
-		my_sprites[$ "Rolling"	] = -1;
+		my_sprites[$ "Rolling"	] = spr_roll5;
 		my_sprites[$ "Shield"	] = anim_define(spr_shield5, anim_define(spr_shield5));
 		my_sprites[$ "ShieldR"	] = -1;
-		my_sprites[$ "ShieldB"	] = anim_define_ext(-1, 0, 0.12, 1, 0, 1, 0, 0, true, -1);
+		my_sprites[$ "ShieldB"	] = anim_define_ext(spr_shieldbreak5, 0, 0.12, 1, 0, 1, 0, 0, true, spr_shieldbreak5);
 		my_sprites[$ "ParryS"	] = -1;
 		my_sprites[$ "SDodge"	] = -1;
 				 
