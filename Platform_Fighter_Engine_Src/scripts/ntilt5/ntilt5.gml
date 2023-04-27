@@ -1,5 +1,5 @@
 function ntilt5() {
-	//Up Tilt for character5
+	//Neutral Tilt for character5
 	var run = true;
 	var _phase = argument_count > 0 ? argument[0] : attack_phase;
 	//Timer
@@ -27,10 +27,10 @@ function ntilt5() {
 				{
 				if (attack_frame == 0)
 					{
-					anim_frame = 1;
+					anim_frame = 0;
 			
 					attack_phase++;
-					attack_frame = 4;
+					attack_frame = 3;
 					
 					//Normal hitbox
 					var _hitbox = hitbox_create_melee(25, 1, .63, .14, 6, 6, 0.2, 3, 0, 5, SHAPE.circle, 0);
@@ -48,8 +48,9 @@ function ntilt5() {
 					anim_frame = 2;
 				
 					attack_phase++;
+					
 					//Whiff lag
-					attack_frame = attack_connected() ? 7 : 16;
+					attack_frame = attack_connected() ? 3 : 8;
 					}
 				break;
 				}
@@ -57,10 +58,10 @@ function ntilt5() {
 			case 2:
 				{
 				//Animation
-				if (attack_frame == 11)
+				if (attack_frame == 6)
+					anim_frame = 2;
+				if (attack_frame == 3)
 					anim_frame = 3;
-				if (attack_frame == 5)
-					anim_frame = 4;
 			
 				if (attack_frame == 0)
 					{
