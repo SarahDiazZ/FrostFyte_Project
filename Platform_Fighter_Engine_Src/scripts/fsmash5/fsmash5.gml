@@ -73,7 +73,7 @@ function fsmash5() {
 				
 					attack_phase++;
 					attack_frame = 10;
-					var _hitbox = hitbox_create_melee(15, 0, 0.59, 0.22, 13, 6, 1.4, 8, 30, 11, SHAPE.circle, 1);
+					var _hitbox = hitbox_create_melee(16, 2, 0.65, 0.13, 13, 6, 1.4, 8, 30, 11, SHAPE.square, 1);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					}
 				break;
