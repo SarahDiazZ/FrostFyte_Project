@@ -33,7 +33,7 @@ function ntilt5() {
 					attack_frame = 3;
 					
 					//Normal hitbox
-					var _hitbox = hitbox_create_melee(25, 1, .63, .14, 6, 6, 0.2, 3, 0, 5, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(36, 1, .87, .30, 6, 6, 0.2, 3, 0, 5, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hitstun_scaling = 6.5;
 					_hitbox.can_lock = true;

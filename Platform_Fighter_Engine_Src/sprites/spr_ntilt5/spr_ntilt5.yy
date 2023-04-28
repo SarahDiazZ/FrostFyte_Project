@@ -4,7 +4,7 @@
   "name": "spr_ntilt5",
   "bbox_bottom": 31,
   "bbox_left": 0,
-  "bbox_right": 32,
+  "bbox_right": 29,
   "bbox_top": 2,
   "bboxMode": 0,
   "collisionKind": 1,

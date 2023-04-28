@@ -33,7 +33,7 @@ function utilt5() {
 					attack_frame = 4;
 					
 					//Normal hitbox
-					var _hitbox = hitbox_create_melee(1, -12, .68, .59, 6, 6, 0.2, 2, 80, 5, SHAPE.circle, 0);
+					var _hitbox = hitbox_create_melee(7, -13, 1.03, .81, 6, 6, 0.2, 2, 80, 5, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hitstun_scaling = 6.5;
 					_hitbox.can_lock = true;
@@ -49,7 +49,7 @@ function utilt5() {
 				
 					attack_phase++;
 					//Whiff lag
-					attack_frame = attack_connected() ? 7 : 16;
+					attack_frame = attack_connected() ? 7 : 14;
 					}
 				break;
 				}
@@ -57,7 +57,7 @@ function utilt5() {
 			case 2:
 				{
 				//Animation
-				if (attack_frame == 11)
+				if (attack_frame == 10)
 					anim_frame = 3;
 				if (attack_frame == 5)
 					anim_frame = 4;

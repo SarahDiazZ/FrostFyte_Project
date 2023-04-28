@@ -41,7 +41,7 @@ function bair5() {
 					attack_frame = 4;
 					
 					//Initial hit
-					var _hitbox = hitbox_create_melee(-13, 5, .29, .14, 9, 10, 1, 2, 180, 4, SHAPE.square, 0);
+					var _hitbox = hitbox_create_melee(-20, 5, .61, .32, 9, 10, 1, 2, 180, 4, SHAPE.circle, 0);
 					_hitbox.hit_vfx_style = HIT_VFX.slash_weak;
 					_hitbox.hit_sfx = snd_hit_weak2;
 					_hitbox.di_angle = 0;
