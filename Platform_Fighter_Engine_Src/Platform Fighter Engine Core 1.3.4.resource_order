@@ -50,7 +50,7 @@
     {"name":"Command Line","order":6,"path":"folders/[Engine]/Utility/Command Line.yy",},
     {"name":"DI Tester","order":15,"path":"folders/[Engine]/Utility/DI Tester.yy",},
     {"name":"Functions","order":14,"path":"folders/[Engine]/Utility/Functions.yy",},
-    {"name":"Hitbox Planner","order":13,"path":"folders/Hitbox Planner.yy",},
+    {"name":"Hitbox Planner","order":17,"path":"folders/[Engine]/Utility/Hitbox Planner.yy",},
     {"name":"Image Generator","order":18,"path":"folders/[Engine]/Utility/Image Generator.yy",},
     {"name":"Knockback Calculator","order":16,"path":"folders/[Engine]/Utility/Knockback Calculator.yy",},
     {"name":"Verlet","order":27,"path":"folders/[Engine]/Verlet.yy",},

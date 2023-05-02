@@ -24,8 +24,8 @@
     "Keyframes": [],
   },
   "parent": {
-    "name": "Hitbox Planner",
-    "path": "folders/Hitbox Planner.yy",
+    "name": "Platform Fighter Engine Core 1.3.4",
+    "path": "Platform Fighter Engine Core 1.3.4.yyp",
   },
   "playback": 0,
   "playbackSpeed": 60.0,

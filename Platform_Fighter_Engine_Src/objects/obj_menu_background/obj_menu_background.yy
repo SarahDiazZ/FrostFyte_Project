@@ -35,5 +35,5 @@
     "path": "sprites/spr_obj_menu_background/spr_obj_menu_background.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
