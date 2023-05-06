@@ -20,4 +20,4 @@ function ui_cursor_add() {
 		}
 	crash("obj_ui_runner did not exist when ui_cursor_add was called");
 }
-/* Copyright 2023 Springroll Games / Yosi */
+/* Copyright 2023 Springroll Games */

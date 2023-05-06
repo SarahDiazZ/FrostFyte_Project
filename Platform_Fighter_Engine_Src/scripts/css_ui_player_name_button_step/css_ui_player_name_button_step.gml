@@ -15,4 +15,4 @@ function css_ui_player_name_button_step() {
 			}
 		}
 }
-/* Copyright 2023 Springroll Games / Yosi */
+/* Copyright 2023 Springroll Games */
